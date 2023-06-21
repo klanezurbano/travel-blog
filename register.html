@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Form</title>
+</head>
+<body>
+  <a href="login.html">Already have an account?</a>
+  <h3>Sign-up an account</h3>
+  <br/>
+  
+  <form action="login.html">
+    <div>
+      <label for="email-address">* Email Address</label>
+      <br/>
+      <input type="text" name="email-address" id="email-address2" placeholder="e.g. hello@example.com" required/>
+    </div>
+    <br/>
+    <div>
+      <label for="password">* Password</label>
+      <br/>
+      <input type="password" name="password" id="password" required/>
+    </div>
+    <br/>
+    <div>
+      <label for="confirm-password">*Confirm Password</label>
+      <br/>
+      <input type="password" name="confirm-password" id="confirm-password" required/>
+    </div>
+    <br/>
+    <div>
+      <label for="fullname">* Full Name</label>
+      <br/>
+      <input type="text" name="fullname" id="fullname" placeholder="e.g. Juan dela Cruz" required/>
+    </div>
+    <br/>
+    <div>
+      <label for="age">* Age</label>
+      <br/>
+      <input type="number" name="age" id="age" min="18" required/>
+    </div>
+    <br/>
+    <div>
+      <label for="birthday">Birthday (optional)</label>
+      <br/>
+      <input type="date" name="birthday" id="birthday" />
+    </div>
+    <br/>
+    <div>
+      <p>Gender: </p>
+      <input type="radio" name="gender" id="male" value="male" checked/>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label>
+    </div>
+    <br/>
+    <div>
+      <p>Select the continents you've travelled into: </p>
+      <input type="checkbox" name="continents" id="asia" value="asia" />
+      <label for="asia">Asia</label>
+      <br/>
+      <input type="checkbox" name="continents" id="africa" value="africa" />
+      <label for="africa">Africa</label>
+      <br/>
+      <input type="checkbox" name="continents" id="north-america" value="north-america" />
+      <label for="north-america">North America</label>
+      <br/>
+      <input type="checkbox" name="continents" id="south-america" value="south-america" />
+      <label for="south-america">South America</label>
+      <br/>
+      <input type="checkbox" name="continents" id="antarctica" value="antarctica" />
+      <label for="antarctica">Antarctica</label>
+      <br/>
+      <input type="checkbox" name="continents" id="europe" value="europe" />
+      <label for="europe">Europe</label>
+      <br/>
+      <input type="checkbox" name="continents" id="australia" value="australia" />
+      <label for="australia">Australia</label>
+    </div>
+    <br/>
+    <div>
+      <label for="profile-photo">Profile Photo</label>
+      <input type="file" name="profile-photo" id="profile-photo" accept=".jpg,.jpeg" required />
+    </div>
+    <br/>
+    <div>
+      <p>Most favorite travel activity: </p>
+      <select name="travel-activity" id="travel-activity">
+        <option value="" disabled selected>Select travel activity</option>
+        <option value="hiking">Hiking</option>
+        <option value="island-hopping">Island Hopping</option>
+        <option value="city-tour">City Tour</option>
+      </select>
+    </div>
+
+    <br/>
+
+    <input type="submit" value="Register" />
+  </form>
+  
+</body>
+</html>
